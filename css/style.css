@@ -1,14 +1,89 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
 
 body {
- font-family: "Nunito Sans";
- color: #F4F4F4;
+  font-family: "Nunito Sans";
+  color: #f4f4f4;
+  background: url(/img/bcg/bcg360.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-color:4px #aa4d4d ;
+}
+
+@media (min-width: 576px) and (max-width: 1440px) {
+  body {
+    font-family: "Nunito Sans";
+    color: #f4f4f4;
+    background: url(/img/bcg/bcg1440.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: 1440px) and (max-width: 1920px) {
+  body {
+    font-family: "Nunito Sans";
+    color: #f4f4f4;
+    background: url(/img/bcg/bcg1920.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 
 .container {
-    margin: 20px;
+  margin: 20px;
 }
 
-.header__inner{
-    width: 320px;
+.header__inner {
+  display: flex;
+  justify-content:space-between;
 }
+
+.logo {
+}
+.logo__link {
+}
+.logo__link__logo {
+  height: 36px;
+}
+.logo__link__brandname {
+  width: 86px;
+}
+.menu {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+}
+.menu__icon {
+}
+.menu__icon__img {
+  height: 16px;
+}
+
+/* анімація 
+ */
+
+/* gift {
+    position: relative;
+  }
+  .box, .bottom, .lid {
+    position: absolute;
+    top: 100;
+    left: 0;
+  }
+
+  
+.lid {
+   Початкові значення для анімації 
+  transform-origin: top center;
+  transform: scaleY(1);
+  opacity: 1;
+  Час та тип анімації 
+  transition: transform 1s ease, opacity 1s ease;
+}
+
+.open {
+   Кінцеві значення для анімації 
+  transform: scaleY(0);
+  opacity: 0;
+} */
