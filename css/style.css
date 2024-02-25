@@ -197,6 +197,15 @@ body {
   transform: scalex(-1);
 }
 
+
+.hidden {
+    display: none;
+  }
+  
+  .visible {
+    display: block;
+  }
+
 /* анімація 
  */
 
