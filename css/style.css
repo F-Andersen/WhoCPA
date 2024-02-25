@@ -1,13 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
 
 * {
-  /* border: 1px solid #df0707; */
+  border: 1px solid #df0707;
   /* для розуміння позицююванян елементів */
   box-sizing: border-box;
   /* щоб елементи не виходили за рам */
 }
-
-
 
 h1 {
   font-size: 36px;
@@ -48,7 +46,7 @@ body {
   }
 }
 
-@media (min-width: 1440px)  {
+@media (min-width: 1440px) {
   body {
     font-family: "Nunito Sans";
     color: #f4f4f4;
@@ -101,20 +99,20 @@ body {
   hyphens: auto;
 }
 
-.section p {
+.section__p {
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
   letter-spacing: 0em;
   text-align: left;
-  margin: 0;
+  /* margin: 0; */
   color: #f4f4f4;
 }
 
 .wristwatch__img {
   display: flex;
-  justify-content: space-between;
-  /* justify-content:space-around; */
+  /* justify-content: space-between; */
+  justify-content: space-around;
 }
 
 .wristwatch__main img {
@@ -132,11 +130,10 @@ body {
   height: 66px;
 }
 
-
-.section__button{
-    display: flex;
-    justify-content: space-around;
-    color: rgba(255, 255, 255, 0); /* Прозорий фон */
+.section__button {
+  display: flex;
+  justify-content: space-around;
+  color: rgba(255, 255, 255, 0); /* Прозорий фон */
 }
 
 .button {
@@ -145,40 +142,59 @@ body {
   position: relative;
   border-bottom: 48px solid #12b0b9;
   /* border-left: 50px solid transparent; */
-  border-right: 20vh solid transparent;
+  border-right: 170px solid transparent;
   height: 50px;
-  width: 50%;   
+  width: 50%;
   border-radius: 0% 0% 0% 10% / 0% 10% 0% 50%;
-  background-color: transparent; 
-  color: rgba(255, 255, 255, 0); 
+  background-color: transparent;
+  display: flex;
+  /* color:#12b0b9; */
+  justify-content: center;
+  flex-direction: row-reverse;
+  color:#ffffff;
+
+
 }
 
-
-
-
-
-.button__left{
-left: 85px;
-transform: scaley(-1);
-z-index: 1;
-background-color: transparent;
-color: rgba(255, 255, 255, 0); 
+.button__left {
+  left: 85px;
+  transform: scaley(-1);
+  z-index: 1;
 }
 
-.button__right{
+.button__right {
   right: 85px;
   transform: scalex(-1);
 }
 
 .button:active {
-    background-color: #0056b3; /* Колір при активному стані (натисканні) */
+  border-bottom: 58px solid #ffffff;
+}
+
+/* .button p:active, */
+.button:active {
+  color: #12b0b9;
 }
 
 
 
-
-
-
+.button__p__left {
+  /* color:#ffffff; */
+  /* width: 100%; */
+  /* margin-left: 12px; */
+  padding-left: 17px;
+  /* padding-bottom: 20px; */
+  display: flex;
+  transform: scaley(-1);
+}
+.button__p__right {
+  /* color:#ffffff; */
+  /* width: 100%; */
+  padding-right: 5px;
+  /* padding-top: 20px; */
+  display: flex;
+  transform: scalex(-1);
+}
 
 /* анімація 
  */
