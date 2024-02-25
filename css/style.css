@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
 
 * {
-  border: 1px solid #df0707;
+  /* border: 1px solid #df0707; */
   /* для розуміння позицююванян елементів */
   box-sizing: border-box;
   /* щоб елементи не виходили за рам */
@@ -15,6 +15,11 @@ h1 {
 h2 {
   font-size: 18px;
   line-height: 25px;
+}
+
+h4 {
+  font-size: 16px;
+  line-height: 21px;
 }
 
 body {
@@ -41,7 +46,7 @@ body {
   }
 }
 
-@media (min-width: 1440px) and (max-width: 1920px) {
+@media (min-width: 1440px)  {
   body {
     font-family: "Nunito Sans";
     color: #f4f4f4;
@@ -54,7 +59,7 @@ body {
 }
 
 .container {
-  margin: 20px 20px 0px 20px;
+  margin: 10px 20px 0px 20px;
 }
 
 .header__inner {
@@ -101,26 +106,77 @@ body {
   letter-spacing: 0em;
   text-align: left;
   margin: 0;
+  color: #f4f4f4;
 }
 
 .wristwatch__img {
- display: flex;
+  display: flex;
+  justify-content: space-between;
+  /* justify-content:space-around; */
 }
 
-.wristwatch__main img{
-height: 240px;
+.wristwatch__main img {
+  max-height: 240px;
 }
 
-.wristwatch__list{
- display: flex; 
- flex-direction: column;
- justify-content: space-around;
- transform: scaleX(-1);
+.wristwatch__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  transform: scaleX(-1);
 }
 
-.wristwatch__list img{
- height: 66px
+.wristwatch__list img {
+  height: 66px;
 }
+
+
+.section__button{
+    display: flex;
+    justify-content: space-around;
+    color: darkblue; /* Прозорий фон */
+}
+
+.button {
+  display: inline-block;
+  position: relative;
+  
+ 
+  border-bottom: 48px solid #12b0b9;
+  /* border-left: 50px solid transparent; */
+  border-right: 170px solid transparent;
+  height: 50px;
+  width: 100%;
+  border-radius: 0% 0% 100% 10% / 1% 10% 1% 50%;
+  background-color: transparent; /* Прозорий фон */
+
+}
+
+
+
+
+
+.button__left{
+left: 85px;
+transform: scaley(-1);
+z-index: 1;
+background-color: transparent;
+}
+
+.button__right{
+  right: 85px;
+  transform: scalex(-1);
+}
+
+.button:active {
+    background-color: #0056b3; /* Колір при активному стані (натисканні) */
+}
+
+
+
+
+
+
 
 /* анімація 
  */
@@ -148,4 +204,4 @@ height: 240px;
    Кінцеві значення для анімації 
   transform: scaleY(0);
   opacity: 0;
-} */;
+} */
