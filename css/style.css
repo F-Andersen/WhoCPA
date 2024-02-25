@@ -7,6 +7,8 @@
   /* щоб елементи не виходили за рам */
 }
 
+
+
 h1 {
   font-size: 36px;
   line-height: 49px;
@@ -134,22 +136,21 @@ body {
 .section__button{
     display: flex;
     justify-content: space-around;
-    color: darkblue; /* Прозорий фон */
+    color: rgba(255, 255, 255, 0); /* Прозорий фон */
 }
 
 .button {
+  border: none;
   display: inline-block;
   position: relative;
-  
- 
   border-bottom: 48px solid #12b0b9;
   /* border-left: 50px solid transparent; */
-  border-right: 170px solid transparent;
+  border-right: 20vh solid transparent;
   height: 50px;
-  width: 100%;
-  border-radius: 0% 0% 100% 10% / 1% 10% 1% 50%;
-  background-color: transparent; /* Прозорий фон */
-
+  width: 50%;   
+  border-radius: 0% 0% 0% 10% / 0% 10% 0% 50%;
+  background-color: transparent; 
+  color: rgba(255, 255, 255, 0); 
 }
 
 
@@ -161,6 +162,7 @@ left: 85px;
 transform: scaley(-1);
 z-index: 1;
 background-color: transparent;
+color: rgba(255, 255, 255, 0); 
 }
 
 .button__right{
