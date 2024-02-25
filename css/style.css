@@ -27,7 +27,7 @@ body {
   margin: 0;
   font-family: "Nunito Sans";
   color: #f4f4f4;
-  background: url(/img/bcg/bcg360.png);
+  background: url(../img/bcg/bcg360.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #0c171b;
@@ -38,7 +38,7 @@ body {
   body {
     font-family: "Nunito Sans";
     color: #f4f4f4;
-    background: url(/img/bcg/bcg1440.png);
+    background: url(../img/bcg/bcg1440.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #0f1d21;
@@ -50,7 +50,7 @@ body {
   body {
     font-family: "Nunito Sans";
     color: #f4f4f4;
-    background: url(/img/bcg/bcg1920.png);
+    background: url(../img/bcg/bcg1920.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #0f1d21;
@@ -181,8 +181,8 @@ body {
 .button__p__left {
   /* color:#ffffff; */
   /* width: 100%; */
-  /* margin-left: 12px; */
-  padding-left: 17px;
+  margin-left: 30px;
+  /* padding-left: 40px; */
   /* padding-bottom: 20px; */
   display: flex;
   transform: scaley(-1);
@@ -190,7 +190,8 @@ body {
 .button__p__right {
   /* color:#ffffff; */
   /* width: 100%; */
-  padding-right: 5px;
+  /* padding-right: 5px; */
+  margin-left: 30px;
   /* padding-top: 20px; */
   display: flex;
   transform: scalex(-1);
