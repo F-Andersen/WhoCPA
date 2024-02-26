@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
 
 * {
-  border: 1px solid #df0707;
+  /* border: 1px solid #df0707; */
   /* для розуміння позицююванян елементів */
   box-sizing: border-box;
   /* щоб елементи не виходили за рам */
@@ -60,6 +60,7 @@ body {
 
 .container {
   margin: 10px 20px 0px 20px;
+  height: 100%;
 }
 
 .header__inner {
@@ -151,9 +152,7 @@ body {
   /* color:#12b0b9; */
   justify-content: center;
   flex-direction: row-reverse;
-  color:#ffffff;
-
-
+  color: #ffffff;
 }
 
 .button__left {
@@ -176,8 +175,6 @@ body {
   color: #12b0b9;
 }
 
-
-
 .button__p__left {
   /* color:#ffffff; */
   /* width: 100%; */
@@ -197,14 +194,11 @@ body {
   transform: scalex(-1);
 }
 
-
 .hidden {
-    display: none;
-  }
-  
-  .visible {
-    display: block;
-  }
+  display: none;
+}
+
+
 
 /* анімація 
  */
