@@ -198,7 +198,31 @@ body {
   display: none;
 }
 
+/* 2 сторінка  */
+.section__h__2{
+font-family: Nunito Sans;
+font-size: 24px;
+line-height: 33px;
+text-align: center;
 
+}
+
+.button__OK {
+    border: none;
+    width: 100px;
+    height: 50px; 
+    background-color: #12b0b9;
+    border-radius: 90px;
+}
+
+.button__p__OK{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    
+}
 
 /* анімація 
  */
