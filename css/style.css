@@ -198,6 +198,16 @@ body {
   display: none;
 }
 
+.hidden__text {
+    opacity: 0;
+    transition: opacity 5s ease; /* Анімація з'явлення */
+}
+
+
+
+
+
+  
 /* 2 сторінка  */
 .section__h__2{
 font-family: Nunito Sans;
@@ -208,7 +218,7 @@ text-align: center;
 }
 
 .button__OK {
-    border: none;
+      border: none;
     width: 100px;
     height: 50px; 
     background-color: #12b0b9;
@@ -227,7 +237,7 @@ text-align: center;
 /* анімація 
  */
 
-/* gift {
+.gift {
     position: relative;
   }
   .box, .bottom, .lid {
@@ -238,16 +248,17 @@ text-align: center;
 
   
 .lid {
-   Початкові значення для анімації 
+   /* Початкові значення для анімації  */
   transform-origin: top center;
   transform: scaleY(1);
   opacity: 1;
-  Час та тип анімації 
+  /* Час та тип анімації  */
   transition: transform 1s ease, opacity 1s ease;
 }
 
 .open {
-   Кінцеві значення для анімації 
+   /* Кінцеві значення для анімації  */
   transform: scaleY(0);
   opacity: 0;
-} */
+
+}

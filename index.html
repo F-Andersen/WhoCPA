@@ -65,7 +65,7 @@
         </div>
       </div>
     </header>
-
+<!-- 
     <section id="content1" class="section" >
       <div class="container">
         <div class="section__h">
@@ -111,26 +111,42 @@
             class="button button__right"
             id="changeSectionButton_1"
           >
-          <!-- id="changeSectionButton_1" -->
             <p class="button__p button__p__right">NO</p>
           </button>
         </div>
       </div>
      
-    </section>
+    </section> -->
 
-    <section id="content2 " class="hidden"> 
+    <section id="content2 " class="hidden1"> 
       <div class="container">
         <div class="section__h section__h__2">
           <h2>Ihre Antworten werden überprüft</h2>
         </div>
-    
+    <div>
       <p>Sie haben 3/3 der Fragen beantwortet!</p>
   
       <p>Es gibt keine vorläufigen Erhebungen über Ihr IP</p>
   
       <p>Geschenke werden geladen.</p>
 
+
+      <div id="example">
+        Sie haben 3/3 der Fragen beantwortet!
+        Es gibt keine vorläufigen Erhebungen über Ihr IP
+        Geschenke werden geladen.</div>
+
+
+      <div id="textContainer">
+        <p class="hidden__text">Sie haben 3/3 der Fragen beantwortet!</p>
+        <p class="hidden__text">Es gibt keine vorläufigen Erhebungen über Ihr IP</p>
+        <p class="hidden__text">Geschenke werden geladen.</p>
+        <p class="hidden__text">Laden...</p>
+      </div>
+      
+      <img src="img/log/ZZ5H.gif" alt="download">
+
+    </div>
       <!-- <div class="section__button"  >
         <button id="changeSectionButton_2"
           type="button"
@@ -140,10 +156,19 @@
         </button> -->
       </div>
       </div>
+      
     </section>
 
     <section id="content3" class="hidden">
       <div class="section__button">
+
+        <div class="gift box-text">
+          <img class="box" src="/img/box/box-4.png" alt="Коробка">
+          <img class="bottom" src="img/box/box-3.png" alt="Дно коробки">
+          <img class="lid" src="img/box/box-2.png" alt="Кришка">
+      
+        </div>
+
         <button id="changeSectionButton_3"
         type="button"
         class="button__OK"
@@ -183,19 +208,14 @@
 
     <!-- анімація -->
 
-    <!-- <section>
-  <div class="gift box-text">
-    <img class="box" src="/img/box/box-4.png" alt="Коробка">
-    <img class="bottom" src="img/box/box-3.png" alt="Дно коробки">
-    <img class="lid" src="img/box/box-2.png" alt="Кришка">
+   
  
-  </div>
-  <button onclick="openGift()">Відкрити подарунок</button>
-</section> -->
+
 
     <!-- <button id="changeContentButton">Змінити вміст</button> -->
 
     <script src="/js/main.js"></script>
+    <script src="/js/animation.js"></script>
   </body>
 </html>
 
