@@ -18,14 +18,14 @@ boxText.addEventListener('click', function() {
 // поява тексту
 
 // Отримуємо всі елементи рядків тексту
-const textLines = document.querySelectorAll('#textContainer p');
+const textLines = document.querySelectorAll('#textContainer p, h3');
 
 // Функція для поступового з'явлення рядків тексту
 function showText() {
   textLines.forEach((line, index) => {
     setTimeout(() => {
       line.classList.remove('hidden__text');
-    }, index * 1000); // Затримка для кожного рядка (в мілісекундах)
+    }, index * 800); // Затримка для кожного рядка (в мілісекундах)
   });
 }
 

@@ -199,56 +199,78 @@ body {
 }
 
 .hidden__text {
-    opacity: 0;
-    transition: opacity 5s ease; /* Анімація з'явлення */
+  opacity: 0;
+  transition: opacity 5s ease; /* Анімація з'явлення */
 }
 
-
-
-
-
-  
 /* 2 сторінка  */
-.section__h__2{
-font-family: Nunito Sans;
-font-size: 24px;
-line-height: 33px;
-text-align: center;
-
+.section__h__2 {
+  font-family: Nunito Sans;
+  font-size: 24px;
+  line-height: 33px;
+  text-align: center;
 }
 
 .button__OK {
-      border: none;
-    width: 100px;
-    height: 50px; 
-    background-color: #12b0b9;
-    border-radius: 90px;
+  border: none;
+  width: 100px;
+  height: 50px;
+  background-color: #12b0b9;
+  border-radius: 90px;
 }
 
-.button__p__OK{
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 19px;
-    letter-spacing: 0em;
-    text-align: center;
-    
+.button__p__OK {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: center;
 }
 
+.container__laden {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+.container__laden h2 {
+  font-size: 24px;
+}
+
+.container__laden__text {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.container__laden__text img {
+  margin-top: 20px;
+  width: 150px;
+}
+
+.container__laden__text h3 {
+  margin-top: 40px;
+  font-size: 20px;
+}
 /* анімація 
  */
 
 .gift {
-    position: relative;
-  }
-  .box, .bottom, .lid {
-    position: absolute;
-    top: 100;
-    left: 0;
-  }
-
-  
+  position: relative;
+}
+.box,
+.bottom,
 .lid {
-   /* Початкові значення для анімації  */
+  position: absolute;
+  top: 100;
+  left: 0;
+}
+
+.lid {
+  /* Початкові значення для анімації  */
   transform-origin: top center;
   transform: scaleY(1);
   opacity: 1;
@@ -257,8 +279,7 @@ text-align: center;
 }
 
 .open {
-   /* Кінцеві значення для анімації  */
+  /* Кінцеві значення для анімації  */
   transform: scaleY(0);
   opacity: 0;
-
 }
