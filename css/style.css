@@ -280,7 +280,6 @@ body {
   height: 160px;
   /* width: 100%;
   height: 100%; */
-  
 }
 
 .container__one__box {
@@ -290,35 +289,14 @@ body {
 }
 
 .lid {
-  /* position: absolute;
-  top: 100px; */
-  /* margin-top: -200px; */
-  /* z-index: 0; */
   margin-bottom: -25px;
-  
 }
 
-/* .box {
-  position: absolute;
-  top: 100px;
-  left: 0;
-  margin-top: -145px;
-  z-index: 1;
-} */
 
 .bottom {
   margin-top: -49px;
-
-
 }
 
-/* .box,
-.bottom,
-.lid {
-  position: absolute;
-  top: 100px;
-  left: 0;
-} */
 
 .lid {
   /* Початкові значення для анімації  */
@@ -336,11 +314,78 @@ body {
 }
 
 .container__grid {
+  margin: 50px 0px 0px 100px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr); 
- 
-  grid-template-rows: repeat(3, 1fr); 
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   height: 100vh;
 }
 
 
+/* nodal */
+
+/* Сховати модальне вікно за замовчуванням */
+/* Сховати модальне вікно за замовчуванням */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5); /* Півпрозорий фон */
+}
+
+/* Стилі для вмісту модального вікна */
+.modal-content {
+  display: flex;
+  align-items: center;
+   flex-direction: column;
+  /* background-color: #fefefe; */
+  margin: 15% auto; /* Відступи від верху та низу, центрування по горизонталі */
+  padding: 20px;
+  /* border: 1px solid #888; */
+  width: 80%;
+  text-align: center; /* Вирівнювання тексту по центру */
+}
+
+.modal-content h2{
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 87px;
+  letter-spacing: 0em;
+  text-align: center;
+  
+}
+/* Стилі для кнопки закриття */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Стилі для кнопки OK */
+#modalOkBtn {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+#modalOkBtn:hover {
+  background-color: #45a049;
+}
