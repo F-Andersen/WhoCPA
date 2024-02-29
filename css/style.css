@@ -389,3 +389,9 @@ body {
 #modalOkBtn:hover {
   background-color: #45a049;
 }
+
+
+.button__hidden{
+  display: none;
+
+}

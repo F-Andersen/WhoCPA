@@ -1,17 +1,5 @@
 // анімація
 
-// function openGift() {
-//     var lid = document.querySelector('.lid');
-//     lid.classList.add('open'); // Додаємо клас, що спрацює анімацію
-// }
-
-// // Отримуємо посилання на елемент з текстом на коробці
-// var boxText = document.querySelector('.box-text');
-
-// // Додаємо обробник події для тексту на коробці
-// boxText.addEventListener('click', function() {
-//     openGift(); // Викликаємо функцію відкриття подарунка при кліку на текст
-// });
 
 
 
@@ -28,6 +16,42 @@ var boxTexts = document.querySelectorAll('.box-text');
 boxTexts.forEach(function(boxText) {
   boxText.addEventListener('click', openGift); // Викликаємо функцію відкриття подарунка при кліку на текст
 });
+
+// 
+
+// Отримуємо посилання на всі елементи з класом box-text
+var boxTexts = document.querySelectorAll('.box-text');
+
+// Додаємо обробник події для кожного елементу з класом box-text
+boxTexts.forEach(function(boxText) {
+  boxText.addEventListener('click', function() {
+    openModal(); // Викликаємо функцію відкриття модального вікна при кліку на коробку
+  });
+});
+
+// Отримуємо посилання на модальне вікно
+var modal = document.getElementById("myModal");
+
+// Функція для відкриття модального вікна
+function openModal() {
+  modal.style.display = "block";
+}
+
+// Функція для закриття модального вікна
+function closeModal() {
+  modal.style.display = "none";
+}
+
+// Отримуємо посилання на кнопку "OK"
+var okButton = document.getElementById("changeSectionButton_4");
+
+// Додаємо обробник події для кнопки "OK"
+okButton.addEventListener('click', function() {
+  closeModal(); // Закриваємо модальне вікно при кліку на кнопку "OK"
+});
+
+
+
 
 // поява тексту
 
@@ -61,13 +85,13 @@ btn.onclick = function() {
 }
 
 // Коли користувач клікає на (x) або кнопку ОК, закрити модальне вікно
-span.onclick = function() {
-  modal.style.display = "none";
-}
+// span.onclick = function() {
+//   modal.style.display = "none";
+// }
 
-okBtn.onclick = function() {
-  modal.style.display = "none";
-}
+// okBtn.onclick = function() {
+//   modal.style.display = "none";
+// }
 
 // Коли користувач клікає поза модальним вікном, закрити його
 window.onclick = function(event) {
@@ -75,3 +99,34 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+//  5 секція 
+
+// Отримуємо посилання на всі елементи з класом box-text в п'ятій секції
+var boxTextsContent5 = document.querySelectorAll('#content5 .box-text');
+
+// Отримуємо посилання на кнопку "OK"
+var okButton = document.getElementById("changeSectionButton_5");
+
+// Функція для переходу на наступну секцію
+function transitionToNextSection() {
+  var nextSection = document.querySelector('#content5').nextElementSibling;
+  if (nextSection) {
+    nextSection.classList.remove('hidden'); // Показуємо наступну секцію
+    document.querySelector('#content5').classList.add('hidden'); // Ховаємо поточну секцію
+  }
+}
+
+// Додаємо обробник події для кнопки "OK"
+okButton.addEventListener('click', function() {
+  openModal(); // Викликаємо функцію відкриття модального вікна при кліку на кнопку
+  setTimeout(transitionToNextSection, 1000); // Викликаємо перехід на наступну секцію через 2 секунди
+});
+
+// Додаємо обробник події для кожного елементу з класом box-text в п'ятій секції
+boxTextsContent5.forEach(function(boxText) {
+  boxText.addEventListener('click', function() {
+    openModal(); // Викликаємо функцію відкриття модального вікна при кліку на коробку
+    setTimeout(transitionToNextSection, 1000); // Викликаємо перехід на наступну секцію через 2 секунди
+  });
+});
