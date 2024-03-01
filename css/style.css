@@ -24,7 +24,7 @@ h4 {
 
 body {
   padding: 0;
-  margin: 0;
+  margin: 0 40px;
   font-family: "Nunito Sans";
   color: #f4f4f4;
   background: url(../img/bcg/bcg360.png);
@@ -33,30 +33,12 @@ body {
   background-color: #0c171b;
   hyphens: auto;
 }
-
-@media (min-width: 576px) and (max-width: 1440px) {
-  body {
-    font-family: "Nunito Sans";
-    color: #f4f4f4;
-    background: url(../img/bcg/bcg1440.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #0f1d21;
-    hyphens: auto;
-  }
+/* .logo__link__logo img{
+  height: 80px;
 }
-
-@media (min-width: 1440px) {
-  body {
-    font-family: "Nunito Sans";
-    color: #f4f4f4;
-    background: url(../img/bcg/bcg1920.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #0f1d21;
-    hyphens: auto;
-  }
-}
+.logo__link__brandname {
+  width: 170px;
+}  */
 
 .container {
   margin: 10px 20px 0px 20px;
@@ -72,15 +54,17 @@ body {
 .logo {
   display: flex;
 }
+.logo__link__2,
 .logo__link {
   display: flex;
 }
 .logo__link__logo {
-  height: 36px;
+  height: 80px;
 }
 .logo__link__brandname {
-  width: 86px;
+  width: 170px;
 }
+
 .menu {
   display: flex;
   align-items: flex-end;
@@ -125,7 +109,7 @@ body {
 }
 
 .wristwatch__main img {
-  max-height: 240px;
+  height: 240px;
 }
 
 .wristwatch__list {
@@ -292,11 +276,9 @@ body {
   margin-bottom: -25px;
 }
 
-
 .bottom {
   margin-top: -49px;
 }
-
 
 .lid {
   /* Початкові значення для анімації  */
@@ -321,7 +303,6 @@ body {
   height: 100vh;
 }
 
-
 /* nodal */
 
 /* Сховати модальне вікно за замовчуванням */
@@ -335,14 +316,14 @@ body {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0,0,0,0.5); /* Півпрозорий фон */
+  background-color: rgba(0, 0, 0, 0.5); /* Півпрозорий фон */
 }
 
 /* Стилі для вмісту модального вікна */
 .modal-content {
   display: flex;
   align-items: center;
-   flex-direction: column;
+  flex-direction: column;
   /* background-color: #fefefe; */
   margin: 15% auto; /* Відступи від верху та низу, центрування по горизонталі */
   padding: 20px;
@@ -351,13 +332,12 @@ body {
   text-align: center; /* Вирівнювання тексту по центру */
 }
 
-.modal-content h2{
+.modal-content h2 {
   font-size: 64px;
   font-weight: 700;
   line-height: 87px;
   letter-spacing: 0em;
   text-align: center;
-  
 }
 /* Стилі для кнопки закриття */
 .close {
@@ -375,7 +355,7 @@ body {
 }
 
 /* Стилі для кнопки OK */
-#modalOkBtn {
+/* #modalOkBtn {
   padding: 10px 20px;
   background-color: #4CAF50;
   color: white;
@@ -388,10 +368,143 @@ body {
 
 #modalOkBtn:hover {
   background-color: #45a049;
+} */
+
+.container__wristwatch {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* width: 777px; */
 }
 
+.container__width {
+  max-width: 777px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container__wristwatch img {
+  max-height: 380px;
+  max-width: 354px;
+}
 
-.button__hidden{
+.container__wristwatch h3 {
+  font-size: 40px;
+  line-height: 55px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.container__wristwatch h5 {
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: 0em;
+  margin-top: -10px;
+}
+
+/* .container__p__norm */
+.container__p__norm p {
+  margin-top: -15px;
+  /* display: flex; */
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.button__hidden {
   display: none;
+}
 
+/* font-family: Nunito Sans;
+font-size: 14px;
+font-weight: 400;
+line-height: 21px;
+letter-spacing: 0em;
+text-align: center; */
+
+@media (max-width: 575px) {
+  .logo__link img {
+    height: 42px;
+    /* width: 86px; */
+  }
+  .logo__link__2 img {
+    width: 86px;
+  }
+}
+
+/* Попробувать задвть самій картинці */
+
+@media (min-width: 580px) and (max-width: 1440px) {
+  body {
+    font-family: "Nunito Sans";
+    color: #f4f4f4;
+    background: url(../img/bcg/bcg1440.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #0f1d21;
+    hyphens: auto;
+  }
+
+  .container__media__576 {
+    display: flex;
+  }
+
+  .container__media__576__left {
+    width: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .container__media__576__right {
+    display: flex;
+    height: 280px;
+  }
+  
+
+  
+  .wristwatch__img{
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    font-family: "Nunito Sans";
+    color: #f4f4f4;
+    background: url(../img/bcg/bcg1920.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #0f1d21;
+    hyphens: auto;
+  }
+
+  .container__media__576 {
+    display: flex;
+  }
+
+  .container__media__576__left {
+    width: 753px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .container__media__576__right {
+    display: flex;
+    height: 566px;
+  }
+  .wristwatch__main img {
+    height: 566px;
+  }
+
+  .wristwatch__list img{
+    height: 156px;
+  }
+  .wristwatch__img{
+    justify-content: space-between;
+  }
+  /* .wristwatch__img{
+    height: 566px;
+  } */
 }
